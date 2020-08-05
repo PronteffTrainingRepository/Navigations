@@ -8,7 +8,7 @@ import {
   SafeAreaView,
   ScrollView,
 } from "react-native";
-
+import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { MaterialIcons } from "@expo/vector-icons";
 
 const height = Dimensions.get("window").height;
@@ -36,7 +36,7 @@ class HomeScreen extends Component {
                 alignItems: "center",
               }}
             >
-              <MaterialIcons name="menu"  size={35} color="white" />
+              <MaterialIcons name="menu"  onPress={() => this.props.navigation.openDrawer()} size={35} color="white" />
               <View style={{ paddingLeft: height * 0.01 }}>
                 <Text
                   style={{
@@ -62,8 +62,9 @@ class HomeScreen extends Component {
             </View>
             <View style={{ flexDirection: "row" }}>
               <MaterialIcons name="settings" size={30} color="white" />
-              <MaterialIcons name="notifications" size={30} color="white" />
-            </View>
+              {/* <SimpleLineIcons name="logout"  size={24} style={{color:'white',fontWeight:'bold'}} /> */}
+              <MaterialCommunityIcons name="logout" onPress={() => this.props.navigation.navigate('Login')} size={30} color="white" />
+</View>
           </View>
           <View style={styles.imgheadview}>
             <View style={styles.imgview}>
@@ -148,7 +149,7 @@ export default HomeScreen;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    paddingTop: height * 0.06,
+    paddingTop: height * 0.03,
     paddingLeft: height * 0.001,
     backgroundColor: "rgb(107, 188, 105)",
 
