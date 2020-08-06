@@ -60,7 +60,7 @@ class HomeScreen extends Component {
                 </Text>
               </View>
             </View>
-            <View style={{ flexDirection: "row" }}>
+            <View style={{ flexDirection: "row" ,justifyContent:'space-evenly'}}>
               <MaterialIcons name="settings" size={30} color="white" />
               {/* <SimpleLineIcons name="logout"  size={24} style={{color:'white',fontWeight:'bold'}} /> */}
               <MaterialCommunityIcons name="logout" onPress={() => this.props.navigation.navigate('Login')} size={30} color="white" />

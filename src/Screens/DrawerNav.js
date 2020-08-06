@@ -19,6 +19,11 @@ class DrawerNav extends Component {
               component={TabNav}
              
             />
+            <Drawer.Screen  
+              name="Home1"
+              component={Home}
+             
+            />
             <Drawer.Screen
               name="Blog"
               component={Blog}

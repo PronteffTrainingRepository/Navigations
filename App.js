@@ -7,7 +7,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 // import BlogDetails from "./src/Screens/BlogDetails";
 import StackNav from './Stacknav'
  //import Header from './src/Screens/CustomHeader/CustomHeader'
-
+import Image from './src/Screens/Image'
 const Stack = createStackNavigator();
 
 // function NavStack() {
@@ -41,6 +41,7 @@ export default function App() {
       {/* <NavStack /> */}
       
       <StackNav/>
+      {/* <Image/> */}
     </NavigationContainer>
   );
 }

@@ -28,12 +28,11 @@ class Stacknav extends Component {
           component={DrawerNav}
           options={{ title: "Home" }}
         />
-        <Stack.Screen name="Dashboard"
-          component={Home} />
+       
         <Stack.Screen
-          name="Blog"
+          name="Blog1"
           component={Blog}
-          options={{ title: "Blog" }}
+          options={{ title: "Blog1" }}
         />
         <Stack.Screen
           name="BlogDetails"
