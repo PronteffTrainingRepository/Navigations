@@ -14,7 +14,7 @@ class CustomDrawerContent extends Component {
     
     state = {
         image: 'null',
-        name:'sravan Kumar Reddy dfldsahdsajdsadsajdja',
+        name:'sravan Kumar Reddy',
         number:'1234567890',
       };
 pickImage = async () => {
